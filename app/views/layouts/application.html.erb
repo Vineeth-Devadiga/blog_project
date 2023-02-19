@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <div id="wrapper">
+  <div id="content">
+    <div id="header">
+      <div id="logo">
+        <h1>Blog app</h1>
+        <h4>Ralis Application</h4>
+      </div>
+      <div id="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div id="mainimg">
+      <h3>Articles</h3>
+      <h4>Guide for Developers</h4>
+    </div>
+    <%= yield %>
+    <div id="contentarea">
+      <div id="leftbar">
+        
+      <div id="rightbar">
+        <h2>latest news</h2>
+        <p><span class="orangetext">18/01/2023</span><br />
+          Article 1 is Updated <br />
+          <br />
+          <span class="orangetext">10/08/2006</span><br />
+          Article 2 is Updated <br />
+          <br />
+          <span class="orangetext">28/07/2006</span><br />
+          Article 3 is Updated </p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div id="email"><a href="mailto:info@yourcompany.com"></a></div>
+      <div id="validtext">
+        <p>Valid <a href="http://validator.w3.org/check?uri=referer"></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer"></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
